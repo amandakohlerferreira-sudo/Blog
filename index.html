@@ -11,6 +11,7 @@
     <header>
         <h1>Meu blog tech</h1>
         <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
     <style>
 header {
 background-color: #183C63;
@@ -29,15 +30,27 @@ img {
 width: 80px;
 height: 80px;
 }
+div p {
+font-weight: bold;
+}
+.artigo-autor {
+font-w
 </style>
-    <main>
-        <img src="imagem-blog.png" alt="livros com simbolos de tecnoligia">
+    
+        </header>
+  <img src="imagem-blog.png" alt="livros com simbolos de tecnoligia">
+        </main>
         <div><h2>Meu primeiro post</h2>
         <p>Por: Amanda Kohler</p>
         <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
             tecnologia.</p></div>
 
     </main>
+    <script>const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;</script>
 </body>
 
 </html>
